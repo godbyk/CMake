@@ -246,7 +246,7 @@ function(write_compiler_detection_header
     file_keyword file_arg
     prefix_keyword prefix_arg
     )
-  if (NOT file_keyword STREQUAL FILE)
+  if (NOT file_keyword STREQUAL "FILE")
     message(FATAL_ERROR "write_compiler_detection_header: FILE parameter missing.")
   endif()
   if (NOT prefix_keyword STREQUAL PREFIX)
